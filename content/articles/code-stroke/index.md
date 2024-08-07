@@ -1,9 +1,20 @@
 +++
 title = 'Code Stroke'
 date = 2024-08-07T13:41:01+10:00
-draft = true
+draft = false
 categories = ['stroke']
 tags = ['emergency', 'logistics']
 weight = 1
 +++
-This is the only document
+# Overview
+This document is designed to assist anaesthetists with managing a code stroke
+
+# Logistics
+Code stroke patients may require endovascular clot retrieval. This involves a trip to RMH
+
+# Teams
+ED, neurology, PICU, PIPER and anaesthesia are involved from RCH
+RMH neurointerventional radiology does the ECR
+
+# More information
+You can see the RCH code stroke guideline [here](https://google.com)

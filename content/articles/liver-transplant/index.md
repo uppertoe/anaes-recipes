@@ -1,7 +1,7 @@
 +++
 title = 'Liver Transplantation'
 date = 2024-08-07T15:14:03+10:00
-draft = true
+draft = false
 categories = ['cases']
 tags = ['liver', 'transplant', 'guide']
 +++
