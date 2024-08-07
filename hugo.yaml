@@ -3,6 +3,8 @@ title: RCH Anaesthesia Recipes
 paginate: 5
 theme: PaperMod
 
+mainsections: ["articles"]
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -30,28 +32,24 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
   ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
+  ShowRssButtonInSectionTermList: false
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  tocopen: true
 
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    icon: /balloon-fill.svg
     iconHeight: 35
 
   # profile-mode
@@ -72,8 +70,10 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "RCH Anaesthesia Recipes  \U0001F44B"
-    Content: Welcome to my blog
+    Content: >
+        - Welcome to a resource for anaesthetists at the Royal Children's Hospital
 
+        - Check out a few articles that may be helpful in your day-to-day practice
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
@@ -92,24 +92,21 @@ params:
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
 
-
-
 menu:
   main:
-    - name: search
+    - name: "search  \U0001F50D"
       url: search/
-      weight: 5
+      weight: 10
     - identifier: about
       name: about
       url: /about/
-      weight: 10
+      weight: 5
     - identifier: categories
       name: categories
       url: /categories/
       weight: 20
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - name: archive
+      url: archives
       weight: 30
     - identifier: example
       name: education portal
@@ -125,3 +122,9 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search

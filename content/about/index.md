@@ -2,6 +2,7 @@
 title = 'About'
 date = 2024-08-07T13:37:38+10:00
 draft = true
+searchHidden = true
 +++
 
 This is a resource for anaesthetists at the Royal Children's Hospital. It aims to provide helpful information on managing uncommon or complex situations.
