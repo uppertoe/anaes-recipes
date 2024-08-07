@@ -1,7 +1,7 @@
 baseURL: "https://examplesite.com/"
 title: RCH Anaesthesia Recipes
 paginate: 5
-theme: PaperMod
+theme: PaperModX
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -13,6 +13,7 @@ minify:
   minifyOutput: true
 
 params:
+  TocSide: 'left'  # or 'right'
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: RCH Anaesthesia Recipes
   description: "Helpful information for anaesthetists at the Royal Children's Hospital, Melbourne"
